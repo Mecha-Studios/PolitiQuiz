@@ -1,4 +1,4 @@
-var version = "1.1";
+var version = "1.2";
 var versiontext = document.getElementById("versionnumber");
 var views = document.getElementById("views");
 console.log("PolitiQuiz Version:" + version);
