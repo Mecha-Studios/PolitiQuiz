@@ -18,6 +18,15 @@ body{
     border-radius: 15px;
     text-align: center;
     display: inline-block;
+    top: 100px;
+}
+
+.topbar {
+    background-color: darkgrey;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar {
@@ -70,22 +79,21 @@ body{
 }
 
 .dropdown {
-    position: absolute;
+    position: fixed;
     display: inline-block;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: darkgrey;
 }
   
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 2;
-    background-color: black;
+    background-color: darkgrey;
 }
   
 .dropdown:hover .dropdown-content {
@@ -93,7 +101,7 @@ body{
 }
 
 #dropbutton{
-    background-color: black;
+    background-color: darkgrey;
     color: white;
 }
 #dropbutton:hover{

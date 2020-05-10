@@ -1,4 +1,4 @@
-var version = "1.0";
+var version = "1.1";
 var versiontext = document.getElementById("versionnumber");
 var views = document.getElementById("views");
 console.log("PolitiQuiz Version:" + version);
@@ -18,13 +18,19 @@ function addPointsLeft(){
 }
 
 function finalResults(){
+    var finalScore = pointsRight - pointsLeft;
     if(pointsRight > pointsLeft){
         console.log("You are right wing!");
+        console.log("Final Score = " + finalScore);
+        alert("Final Score: " + finalScore + 
+        " A negative score is left wing, a positive score is right wing." + 
+        "You are right wing!");
     } else if(pointsLeft > pointsRight){
         console.log("You are left wing!");
+        console.log("Final Score = " + finalScore);
+        alert("Final Score: " + finalScore + 
+        " A negative score is left wing, a positive score is right wing." + 
+        "You are left wing");
     }
-    var finalScore = pointsRight - pointsLeft;
-    console.log("Final Score = " + finalScore);
-    alert("Final Score: " + finalScore + 
-    " A negative score is left wing, a positive score is right wing.");
+    
 }
