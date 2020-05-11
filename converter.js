@@ -1,4 +1,4 @@
-var version = "1.3";
+var version = "1.4";
 var versiontext = document.getElementById("versionnumber");
 var views = document.getElementById("views");
 var spectrumaxis = document.getElementById("politicalaxis");
