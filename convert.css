@@ -1,5 +1,6 @@
 body{
-    background-color: grey;
+    /*background-color: grey;*/
+    background: linear-gradient(red,blue) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -18,15 +19,72 @@ body{
     border-radius: 15px;
     text-align: center;
     display: inline-block;
-    top: 100px;
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.forumpost{
+    background-color: black;
+    color: white;
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
+    text-align: left;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.aboutpost{
+    background-color: black;
+    color: white;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.forumheader{
+    background-color: red;
+    overflow: hidden;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: left;
+    display: inline-block;
+}
+
+
+#finishbutton{
+    background-color: grey;
+    color: white;
+    height: 100px;
+    width: 200px;
+    font-size: 40px;
+    border-radius: 15px;
 }
 
 .topbar {
-    background-color: darkgrey;
+    background-color: grey;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, .5) 5px 5px;
 }
 
 .navbar {
@@ -36,6 +94,7 @@ body{
     bottom: 0;
     width: 400px;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, .5) 5px 5px;
   }
 
   .navbar a {
@@ -46,6 +105,41 @@ body{
     text-decoration: none;
     font-size: 17px;
   }
+
+.scoretracker {
+    background: linear-gradient(red, blue);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, .5) -5px 5px;
+  }
+
+  .scoretracker a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+#scoretxt{
+    color: white;
+}
+
+#spectrumside{
+    color: white;
+}
+
+#politicalaxis{
+    display: none;
+    background: linear-gradient(red, blue);
+    border-radius: 15px;
+    width: 400px;
+}
 
 .answerbutton{
     background-color: grey;
@@ -65,7 +159,7 @@ body{
     text-shadow: rgba(255, 0, 0, 1) 2px 2px;
 }
 .bottomtext:hover{
-    background: linear-gradient(red,orange);
+    background: linear-gradient(red, blue);
     text-shadow: rgba(0, 0, 0, 1) 2px 2px;
 }
 
@@ -76,7 +170,7 @@ body{
     background-color: grey;
 }
 .menutext:hover{
-    background: linear-gradient(red,orange);
+    background: linear-gradient(red, blue);
     color: white;
     text-shadow: rgba(0, 0, 0, 1) 2px 2px;
     box-shadow: rgba( 0, 0, 0, 1) 2px 2px;
@@ -88,8 +182,7 @@ body{
     display: inline-block;
     top: 0;
     left: 0;
-    background-color: darkgrey;
-    border-radius: 15px;
+    background-color: grey;
 }
   
 .dropdown-content {
@@ -97,10 +190,10 @@ body{
     position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
-    padding: 12px 16px;
+    padding: 12px 15px;
     z-index: 2;
     background-color: darkgrey;
-    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, .5) 5px 5px;
 }
   
 .dropdown:hover .dropdown-content {
@@ -108,7 +201,7 @@ body{
 }
 
 #dropbutton{
-    background-color: darkgrey;
+    background-color: grey;
     color: white;
 }
 #dropbutton:hover{

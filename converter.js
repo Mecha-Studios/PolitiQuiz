@@ -1,6 +1,7 @@
-var version = "1.2";
+var version = "1.3";
 var versiontext = document.getElementById("versionnumber");
 var views = document.getElementById("views");
+var spectrumaxis = document.getElementById("politicalaxis");
 console.log("PolitiQuiz Version:" + version);
 versiontext.innerHTML+= version;
 
@@ -10,27 +11,33 @@ var pointsLeft = 0;
 function addPointsRight(){
     pointsRight++;
     console.log("Points to the Right: " + pointsRight);
+    spectrumaxis.value++;
 }
 
 function addPointsLeft(){
     pointsLeft++;
     console.log("Points to the Left: " + pointsLeft);
+    spectrumaxis.value--;
 }
 
 function finalResults(){
     var finalScore = pointsRight - pointsLeft;
+    var scoretxt = document.getElementById("scoretxt");
+    var spectrumside = document.getElementById("spectrumside");
+    scoretxt.innerHTML = "Final Score : " + finalScore;
+    spectrumaxis.style.display = 'inline';
     if(pointsRight > pointsLeft){
         console.log("You are right wing!");
         console.log("Final Score = " + finalScore);
-        alert("Final Score: " + finalScore + 
-        " A negative score is left wing, a positive score is right wing." + 
-        "You are right wing!");
+        spectrumside.innerHTML = "Spectrum Side: Right";
     } else if(pointsLeft > pointsRight){
         console.log("You are left wing!");
         console.log("Final Score = " + finalScore);
-        alert("Final Score: " + finalScore + 
-        " A negative score is left wing, a positive score is right wing." + 
-        "You are left wing");
+        spectrumside.innerHTML = "Spectrum Side: Left";
+    } else if(pointsRight == pointsLeft){
+        console.log("you are a centrist!");
+        console.log("Final Score = " + finalScore);
+        spectrumside.innerHTML = "Spectrum Side: Center";
     }
     
 }
