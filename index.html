@@ -3,6 +3,8 @@
     <head>
         <title>PolitiQuiz[BETA]</title>
         <link rel="stylesheet" href="convert.css"/>
+        <link rel = "icon" href = "politiquiz logo.png" 
+        type = "image/x-icon">
     </head>
     <body>
         <h1 id="socialpostbutt" title="Post to PolitiForum" onclick="location.href = 'posttoforum.html'">+</h1>
@@ -12,12 +14,16 @@
         <div class="dropdown">
             <span id="dropbutton" style="font-size: 60px;">☰</span>
             <div class="dropdown-content">
+                <img src="politiquiz logo.png" width="50" height="50"/>
                 <h3 class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</h3>
                 <h3 class="menutext" onclick="location.href = 'forum.html'">PolitiForum</h3>
                 <h3 class="menutext" onclick="location.href = 'about.html'">About</h3>
                 <h3 class="menutext" onclick="window.open('https://www.tylerruotolo.tk')">My Website</h3>
             </div>
         </div>
+        <img style="position: fixed; right: 50px; top: 100px;" src="politiquiz logo.png" width="250" height="250"/>
+        <h2 style="position: fixed; color: white; right: 97.5px; font-size: 25px; top: 125px;
+         text-shadow: rgba(255, 0, 0, 1) 2px 2px; background: rgba(0, 0, 0, 1);">[BETA]</h2>
         <table>
             <thead>
                 <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">PolitiQuiz[BETA]</h1>
@@ -185,22 +191,23 @@
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#24 Do you support ?</h2>
+                    <h2>#24 Do you support slavery reparations?</h2>
                     <div class="answerchoice">
                         <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
                         <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#20 Do you support separation of church and state?</h2>
+                    <h2>#25 Do you support low taxes?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
                     </div>
                 </div>
                 <div class="question">
                     <button onclick="finalResults()" id="finishbutton">Finish Quiz</button>
-                </div>
+                </div>  
+                <h1>To submit a question, go to the About page.</h1>
             </tbody>
         </table>
         <div class="navbar">
