@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About - PolitiQuiz[BETA]</title>
+        <title>Post to the Forum - PolitiForum[COMING SOON]</title>
         <link rel="stylesheet" href="convert.css"/>
     </head>
     <body>
-        <h1 id="socialpostbutt" title="Post to PolitiForum" onclick="location.href = 'posttoforum.html'">+</h1>
+        <h1 id="socialpostbutt" onclick="location.href = 'posttoforum.html'">+</h1>
         <div class="topbar">
-            <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">About</h1>
+            <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">PolitiQuiz[BETA]</h1>
         </div>
         <div class="dropdown">
             <span id="dropbutton" style="font-size: 60px;">☰</span>
@@ -24,21 +24,15 @@
             </thead>
             <tbody>
                 <div class="aboutpost">
-                    <h3>PolitiQuiz is a political spectrum test created by Tyler Ruotolo.</h3>
-                    <h3>The purpose of this test is to let you know where you align on the political spectrum.</h3>
-                    <h3>All questions are submitted by other people.</h3>
-                </div>
-                <div class="aboutpost">
-                    <h3>Submit your questions here:</h3>
-                    <form action="mailto:tylerruotolotech@gmail.com" method="post" enctype="text/plain">
-                        Name:<br>
-                        <input type="text" name="name"><br>
-                        Question Submission:<br>
-                        <input type="text" name="comment" size="50"><br><br>
-                        <input class="answerbutton" type="submit" value="Send">
+                    <h3>Post to the Forum:</h3>
+                    <form action="" method="post" enctype="text/plain">
+                        <textarea name="comment" style="width: 300px; height: 100px; font-size: 25px; resize: none; border-radius: 5px;" size="50"></textarea>
+                        <input class="answerbutton" type="submit" value="Post">
                         <input class="answerbutton" type="reset" value="Reset">
                     </form>
                 </div>
+                <h3 style="color: white;">This is just a concept to show what the PolitiForum posting page looks like. 
+                    It does not currently work. It will work in the future, though.</h3>
             </tbody>
         </table>
         <div class="navbar">
@@ -48,6 +42,11 @@
             <a class="bottomtext" onclick="location.href = 'https://www.twitter.com/TylerRuotolo'">Twitter</a>
             <a class="bottomtext" onclick="location.href = 'https://www.youtube.com/TylerRuotolo'">YouTube</a>
             <a class="bottomtext" onclick="location.href = 'https://www.tiktok.com/@tylerruo'">TikTok</a>
+        </div>
+        <div class="scoretracker">
+            <h1 id="scoretxt"></h1>
+            <h1 id="spectrumside"></h1>
+            <input id="politicalaxis" type="range" min="1" max="40" disabled/>
         </div>
         <script src="converter.js"></script>
         <script data-ad-client="ca-pub-4518933379950981" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

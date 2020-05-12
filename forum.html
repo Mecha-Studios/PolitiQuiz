@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Forum - PolitiQuiz[COMING SOON]</title>
+        <title>PolitiForum[COMING SOON]</title>
         <link rel="stylesheet" href="convert.css"/>
     </head>
     <body>
+        <h1 id="socialpostbutt" title="Post to PolitiForum" onclick="location.href = 'posttoforum.html'">+</h1>
         <div class="topbar">
             <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">PolitiForum[COMING SOON]</h1>
         </div>
@@ -12,7 +13,7 @@
             <span id="dropbutton" style="font-size: 60px;">☰</span>
             <div class="dropdown-content">
                 <h3 class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</h3>
-                <h3 class="menutext" onclick="location.href = 'forum.html'">Forum</h3>
+                <h3 class="menutext" onclick="location.href = 'forum.html'">PolitiForum</h3>
                 <h3 class="menutext" onclick="location.href = 'about.html'">About</h3>
                 <h3 class="menutext" onclick="window.open('https://www.tylerruotolo.tk')">My Website</h3>
             </div>
@@ -26,10 +27,36 @@
                     <div class="forumheader">
                         <img title="TylerRuotolo" src="new yt icon transparent.png" style="width: 50px; height: 50px;"/>
                     </div>
-                    <h3>This part of PolitiQuiz is still under construction. It will be done soon.</h3>
+                    <h3>PolitiForum is still under construction. It will be done soon.</h3>
                 <div>
             </tbody>
         </table>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        <div class="trending">
+            <a class="bottomtext">#Obamagate</a>
+            <a class="bottomtext">#Trump2020</a>
+            <a class="bottomtext">#PolitiQuiz</a>
+            <a class="bottomtext">#TikTok</a>
+        </div>
         <div class="navbar">
             <a class="bottomtext" onclick="location.href = 'LICENSE'">© Copyright Tyler Ruotolo 2020</a>
             <a id="versionnumber" class="bottomtext" style="right: 0;">Version: </a>
