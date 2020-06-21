@@ -21,19 +21,27 @@
         </div>
         <table>
             <thead>
-                <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">PolitiForum[COMING SOON]</h1>
+                <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">PolitiForum[BETA]</h1>
             </thead>
             <tbody>
                 <div class="aboutpost">
                     <h3>Post to the Forum:</h3>
-                    <form action="" method="post" enctype="text/plain">
-                        <textarea name="comment" style="width: 300px; height: 100px; font-size: 25px; resize: none; border-radius: 5px;" size="50"></textarea>
-                        <input class="answerbutton" type="submit" value="Post">
-                        <input class="answerbutton" type="reset" value="Reset">
+                    <form name="ForumPost" method="POST" data-netlify="true">
+                        <p>
+                          <label>Name: <input type="text" name="name" required/></label>   
+                        </p>
+                        <p>
+                            <label>Email: <input type="text" name="email" required/></label>
+                        </p>
+                        <p>
+                          <label>Post: <textarea name="post" style="width: 300px; height: 100px; font-size: 25px; resize: none; border-radius: 5px;" required></textarea></label>
+                        </p>
+                        <p>
+                          <button class="answerbutton" type="submit">Post</button>
+                        </p>
                     </form>
                 </div>
-                <h3 style="color: white;">This is just a concept to show what the PolitiForum posting page looks like. 
-                    It does not currently work. It will work in the future, though.</h3>
+                <h3 style="color: white;">It may take a little while before you see your post on PolitiForum. You will be notified via email when it is posted!</h3>
             </tbody>
         </table>
         <div class="navbar">
