@@ -16,10 +16,10 @@
             <span id="dropbutton" style="font-size: 60px;">☰</span>
             <div class="dropdown-content">
                 <img src="politiquiz_logo.png" width="50" height="50"/>
-                <h3 class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</h3>
-                <h3 class="menutext" onclick="location.href = 'forum.html'">PolitiForum</h3>
-                <h3 class="menutext" onclick="location.href = 'about.html'">About</h3>
-                <h3 class="menutext" onclick="location.href = 'support.html'">Support</h3>
+                <a class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</a>
+                <a class="menutext" onclick="location.href = 'forum.html'">PolitiForum</a>
+                <a class="menutext" onclick="location.href = 'about.html'">About</a>
+                <a class="menutext" onclick="location.href = 'support.html'">Support</a>
             </div>
         </div>
         <table>
@@ -28,32 +28,28 @@
             </thead>
             <tbody>
                 <div class="aboutpost">
+                    <h3>Submit your questions here:</h3>
+                    <form name="politiquiz questions" method="POST" data-netlify="true">
+                        <p>
+                          <label style="font-size: 50px;">Your Name: <input type="text" name="name" /></label>   
+                        </p>
+                        <p>
+                          <label style="font-size: 50px;">Your Email: <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                          <label style="font-size: 50px;">Question: <textarea name="message"></textarea></label>
+                        </p>
+                        <p>
+                          <button type="submit">Send</button>
+                        </p>
+                    </form>
                     <h3>PolitiQuiz is a political spectrum test created by Tyler Ruotolo.</h3>
                     <h3>The purpose of this test is to let you know where you align on the political spectrum.</h3>
                     <h3>All questions are submitted by other people.</h3>
                     <h3>The scoring for this test is not the same as the Political Compass test</h3>
                 </div>
-                <div class="aboutpost">
-                    <h3>Submit your questions here:</h3>
-                    <form name="politiquiz questions" method="POST" data-netlify="true">
-                        <p>
-                          <label>Your Name: <input type="text" name="name" /></label>   
-                        </p>
-                        <p>
-                          <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                          <label>Question: <textarea name="message"></textarea></label>
-                        </p>
-                        <p>
-                          <button class="answerbutton" type="submit">Send</button>
-                        </p>
-                    </form>
-                </div>
             </tbody>
         </table>
-        <img src="politiquiz_logo.png" width="250" height="250"/>
-        <img src="tr logo v2.png" width="300" height="300"/>
         <div class="navbar">
             <a class="bottomtext" onclick="location.href = 'LICENSE'">© Copyright Tyler Ruotolo 2020</a>
             <a id="versionnumber" class="bottomtext" style="right: 0;">Version: </a>

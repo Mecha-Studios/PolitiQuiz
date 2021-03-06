@@ -16,36 +16,27 @@
             <span id="dropbutton" style="font-size: 60px;">☰</span>
             <div class="dropdown-content">
                 <img src="politiquiz_logo.png" width="50" height="50"/>
-                <h3 class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</h3>
-                <h3 class="menutext" onclick="location.href = 'forum.html'">PolitiForum</h3>
-                <h3 class="menutext" onclick="location.href = 'about.html'">About</h3>
-                <h3 class="menutext" onclick="location.href = 'support.html'">Support</h3>
+                <a class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</a>
+                <a class="menutext" onclick="location.href = 'forum.html'">PolitiForum</a>
+                <a class="menutext" onclick="location.href = 'about.html'">About</a>
+                <a class="menutext" onclick="location.href = 'support.html'">Support</a>
             </div>
         </div>
-        <table>
-            <thead>
-                <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">About</h1>
-            </thead>
-            <tbody>
-                <div class="aboutpost">
-                    <h3>Submit a support ticket here:</h3>
-                    <form name="Support" method="POST" data-netlify="true">
-                        <p>
-                          <label>Your Name: <input type="text" name="name" /></label>   
-                        </p>
-                        <p>
-                          <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                          <label>Issue: <textarea name="Issue"></textarea></label>
-                        </p>
-                        <p>
-                          <button class="answerbutton" type="submit">Send</button>
-                        </p>
-                    </form>
-                </div>
-            </tbody>
-        </table>
+        <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">About</h1>
+        <form name="contact" netlify>
+            <p>
+              <label style="font-size: 50px; color: white;">Name <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label style="font-size: 50px; color: white;">Email <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label style="font-size: 50px; color: white;">Issue <input type="text" name="issue" /></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+        </form>
         <h3 style="color: white; text-shadow: rgba(0, 0, 0, 0.5) 3px 3px;">This is a form for you to submit a support ticket for any issues you may have.</h3>
         <img src="politiquiz_logo.png" width="250" height="250"/>
         <img src="tr logo v2.png" width="300" height="300"/>

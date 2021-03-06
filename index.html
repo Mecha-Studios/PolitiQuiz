@@ -5,263 +5,167 @@
         <link rel="stylesheet" href="convert.css"/>
         <link rel = "icon" href = "politiquiz logo.png" 
         type = "image/x-icon">
-        <link rel="apple-touch-icon" href="/politiquiz_logo.png">
+        <link rel="apple-touch-icon" href="/politiquiz logo 2021.png">
     </head>
     <body>
         <h1 id="socialpostbutt" title="Post to PolitiForum" onclick="location.href = 'posttoforum.html'">+</h1>
         <div class="topbar">
-            <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">PolitiQuiz[BETA]</h1>
+            <h1 style=" color: white;">
+                <img src="politiquiz full logo 2021.png" style="height: 60px;" alt="">
+            </h1>
         </div>
         <div class="dropdown">
             <span id="dropbutton" style="font-size: 60px;">☰</span>
             <div class="dropdown-content">
                 <img src="politiquiz_logo.png" width="50" height="50"/>
-                <h3 class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</h3>
-                <h3 class="menutext" onclick="location.href = 'forum.html'">PolitiForum</h3>
-                <h3 class="menutext" onclick="location.href = 'about.html'">About</h3>
-                <h3 class="menutext" onclick="location.href = 'support.html'">Support</h3>
+                <a class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</a>
+                <a class="menutext" onclick="location.href = 'forum.html'">PolitiForum</a>
+                <a class="menutext" onclick="location.href = 'about.html'">About</a>
+                <a class="menutext" onclick="location.href = 'support.html'">Support</a>
             </div>
         </div>
-        <img style="position: fixed; right: 50px; top: 100px;" src="politiquiz_logo.png" width="250" height="250"/>
-        <h2 style="position: fixed; color: white; right: 97.5px; font-size: 25px; top: 125px;
-         text-shadow: rgba(255, 0, 0, 1) 2px 2px; background: rgba(0, 0, 0, 1);">[BETA]</h2>
-        <table>
-            <thead>
-                <h1 style="text-shadow:rgba(255, 0, 0, 1) 2px 2px; color: white;">PolitiQuiz[BETA]</h1>
-            </thead>
-            <tbody>
-                <div class="question">
+        <img style="position: fixed; right: 50px; top: 100px;" src="politiquiz logo 2021.png" width="250" height="250"/>
+        <div class="elmcontain">
+                <div class="question" id="1">
                     <h2>#1 Do you have pride in your nation?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
-                <div>
-                <div class="question">
+                </div>
+                <div class="question" id="2">
                     <h2>#2 Should abortion be illegal?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsRight();this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
-                <div>
-                <div class="question">
-                    <h2>#3 Do you think freedom is more important than temporary safety?</h2>
+                </div>
+                <div class="question" id="3">
+                    <h2>#3 Should marijuana be legalized?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#4 Should Planned Parenthood be funded by the government?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#5 Should the government redistrubute wealth?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#6 Should the government regulate things more, such as firearms?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#7 Do you believe the United States is the best country?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#8 Do you believe hate speech exists?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#9 Do you believe the people have the right to keep and bear arms?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#10 Do you think the government should be in charge of healthcare?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#11 Do you support gun control?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#12 Do you support the border wall?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#13 Is capitalism a good economic system?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#14 Do you think Affirmative Action is racist?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#15 Should there be a government buy back on assault weapons?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
-                    </div>
-                <div>
-                <div class="question">
-                    <h2>#16 Do you support President Trump?</h2>
-                    <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#17 Do you support people who are LGBT?</h2>
+                    <h2>#4 Do you support freedom of religion?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#18 Do you support the rioting?</h2>
+                    <h2>#5 Should the police be defunded?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#19 Do you support the legalization of marijuana?</h2>
+                    <h2>#6 Is there a systemic wage gap between men and women?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#20 Do you support freedom of religion?</h2>
+                    <h2>#7 Do you support medicare for all?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#21 Do you believe all cops are bad?</h2>
+                    <h2>#8 Do you support reparations?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#22 Do you believe there is a wage gap between men and women?</h2>
+                    <h2>#9 Do you support low and/or no taxes?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#23 Do you support Universal Healthcare?</h2>
+                    <h2>#10 Do you support the United States Constitution?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#24 Do you support slavery reparations?</h2>
+                    <h2>#11 Are there more than two genders?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#25 Do you support low taxes?</h2>
+                    <h2>#12 Are sex and gender separate?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#26 Do you support the constitution?</h2>
+                    <h2>#13 Does white privilege exist?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#27 Do you believe there are more than two genders?</h2>
+                    <h2>#14 Should hate speech be illegal?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#28 Do you believe sex and gender are different?</h2>
+                    <h2>#15 Should there be a $15 minimum wage?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#29 Do you believe white privilege exists?</h2>
+                    <h2>#16 Do you support President Biden?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#30 Do you support the illegalization of "hate speech"?</h2>
+                    <h2>#17 Should there be mask mandates?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#31 Do you support ANTIFA?</h2>
+                    <h2>#18 Do tech companies such as Twitter, Facebook and Google have an unfair left bias?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#32 Would you trust the government with managing your healthcare?</h2>
+                    <h2>#19 Is affirmative action racist?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'" class="answerbutton">Yes</button>
-                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'" class="answerbutton">No</button>
+                        <button onclick="addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <div class="question">
                     <button onclick="finalResults()" id="finishbutton">Finish Quiz</button>
                 </div>  
-                <h1>To submit a question, go to the <a href="about.html">About</a> page.</h1>
-            </tbody>
-        </table>
+                <h1>To submit a question, go to the <h1 onclick="location.href = 'about.html'" style="color: red;">About</a> page.</h1>
+        </div>
         <div class="navbar">
-            <a class="bottomtext" onclick="location.href = 'LICENSE'">© Copyright Tyler Ruotolo 2020</a>
+            <a class="bottomtext" onclick="location.href = 'LICENSE'">© Copyright TR 2021</a>
             <a id="versionnumber" class="bottomtext" style="right: 0;">Version: </a>
             <a class="bottomtext" onclick="location.href = 'https://www.paypal.me/TylerRuotolo'">Donate</a>
             <a class="bottomtext" onclick="location.href = 'https://www.twitter.com/Politi_Quiz'">Twitter</a>

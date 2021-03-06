@@ -11,20 +11,105 @@ body{
     margin: 0;
 }
 
-.question{
-    background-color: black;
+input{
+    background: rgba(46, 46, 46, 0.5);
+    box-shadow: rgba(0,0,0,0.75)5px 5px 5px;
+    border: none;
+    outline: none;
+    height: 100px;
+    font-size: 75px;
     color: white;
-    width: 450px;
-    height: 150px;
     border-radius: 15px;
-    text-align: center;
-    display: inline-block;
-    box-shadow: rgba(0, 0, 0, .5) 0px 5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
+} input:hover{
+    box-shadow: rgba(255, 123, 0, 0.75) 5px 5px 5px 5px; 
 }
+
+textarea{
+    background: rgba(46, 46, 46, 0.5);
+    box-shadow: rgba(0,0,0,0.75)5px 5px 5px;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    color: white;
+    border-radius: 15px;
+    resize: none;
+  }
+
+  h1{
+      text-align: center;
+  }
+
+  button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+  }
+  
+    button:hover {
+    background: rgba(255, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px; 
+    transform: scale(1.25);
+    border-radius: 15px;
+  }
+
+a {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+  }
+  
+  a:hover {
+    background: linear-gradient(red,orange);
+    color: white;
+    text-shadow: rgba(0, 0, 0, 1) 3px 3px;
+    box-shadow: rgba(255, 123, 0, 0.75) 5px 5px 5px 5px; 
+    transform: scale(1.25);
+    border-radius: 15px;
+  }
+  
+  a.active {
+    background: rgba(50, 50, 50, 0.5);
+  }
+
+.question{
+    width: 100%;
+    height: 250px;
+    margin: 10px;
+    top: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: rgba(255, 255, 255, 0.5) 5px 5px 5px;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+object{
+    color: white;
+}
+
+.elmcontain{
+    width: 60%;
+    position: absolute;
+    margin: 10px;
+    top: 10%;
+    left: 20%;
+    text-align: center;
+}
+
+
 
 #socialpostbutt{
     position: fixed; 
@@ -32,7 +117,7 @@ body{
     right:0; 
     margin-right: 20px; 
     font-size: 50px;
-    z-index: 1;
+    z-index: 101;
     text-align: center;
     margin-top: 10px;
 }
@@ -57,18 +142,16 @@ body{
 }
 
 .aboutpost{
-    background-color: black;
+    position: absolute;
+    width: 80%;
+    margin: 10px;
+    top: 10%;
+    left: 10%;
     color: white;
-    width: 450px;
-    height: 250px;
-    border-radius: 15px;
+    background: rgba(0,0,0,0.75);
+    box-shadow: rgba(0,0,0,0.5) 5px 5px 5px;
     text-align: center;
-    display: inline-block;
-    box-shadow: rgba(0, 0, 0, .5) 0px 5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
+    border-radius: 15px;
 }
 
 
@@ -100,6 +183,7 @@ body{
     top: 0;
     width: 100%;
     box-shadow: rgba(0, 0, 0, .5) 5px 5px;
+    z-index: 100;
 }
 
 .navbar {
@@ -107,9 +191,9 @@ body{
     overflow: hidden;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 400px;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, .5) 5px 5px;
   }
 
   .navbar a {
@@ -203,15 +287,17 @@ body{
 .menutext{
     background-color: none;
     text-shadow: rgba(255, 0, 0, 1) 2px 2px;
+    font-size: 20px;
     color: white;
-    background-color: grey;
+    text-align: center;
+    width: 75%;
 }
 .menutext:hover{
-    background: linear-gradient(red, blue);
+    background: linear-gradient(red,blue);
     color: white;
     text-shadow: rgba(0, 0, 0, 1) 2px 2px;
-    box-shadow: rgba( 0, 0, 0, 1) 2px 2px;
-    transform: translateX(10px);
+    box-shadow: rgba(255, 255, 255, 0.75) 2px 2px 2px 2px; 
+    transform: scale(1.25);
 }
 
 .dropdown {
@@ -219,18 +305,20 @@ body{
     display: inline-block;
     top: 0;
     left: 0;
-    background-color: grey;
+    text-align: center;
+    z-index: 101;
 }
-  
+
 .dropdown-content {
     display: none;
-    position: fixed;
-    background-color: #f9f9f9;
+    position: absolute;
+    background: rgba(255, 123, 0, 0.75);
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px; ;
     min-width: 160px;
-    padding: 12px 15px;
+    padding: 12px 16px;
     z-index: 2;
-    background-color: darkgrey;
-    box-shadow: rgba(0, 0, 0, .5) 5px 5px;
+    border-radius: 15px;
+    text-align: center;
 }
   
 .dropdown:hover .dropdown-content {
@@ -238,10 +326,8 @@ body{
 }
 
 #dropbutton{
-    background-color: grey;
     color: white;
 }
 #dropbutton:hover{
-    background-color: white;
     color: black;
 }
