@@ -247,19 +247,34 @@ object{
     font-size: 17px;
   }
 
-#scoretxt{
+#scoretxt1{
     color: white;
 }
 
-#spectrumside{
+#scoretxt2{
     color: white;
 }
 
-#politicalaxis{
+#espectrumside{
+    color: white;
+}
+
+#pspectrumside{
+    color: white;
+}
+
+#economicaxis{
     display: none;
     background: linear-gradient(red, blue);
     border-radius: 15px;
     width: 400px;
+}
+
+#politicalaxis{
+  display: none;
+  background: linear-gradient(red, blue);
+  border-radius: 15px;
+  width: 400px;
 }
 
 .answerbutton{
@@ -286,7 +301,6 @@ object{
 
 .menutext{
     background-color: none;
-    text-shadow: rgba(255, 0, 0, 1) 2px 2px;
     font-size: 20px;
     color: white;
     text-align: center;
@@ -317,7 +331,6 @@ object{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
     display: block;
   }
   
