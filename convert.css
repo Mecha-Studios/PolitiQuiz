@@ -183,17 +183,16 @@ object{
     top: 0;
     width: 100%;
     box-shadow: rgba(0, 0, 0, .5) 5px 5px;
-    z-index: 100;
+    z-index: 9px;
 }
 
 .navbar {
-    background-color: #333;
+    background-color: black;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 400px;
-    border-radius: 15px;
+    width: 210px;
   }
 
   .navbar a {
@@ -203,6 +202,7 @@ object{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    z-index: 1;
   }
 
 .trending {
@@ -300,26 +300,30 @@ object{
     transform: scale(1.25);
 }
 
-.dropdown {
+.sidenav {
+    height: 100%;
+    width: 210px;
     position: fixed;
-    display: inline-block;
     top: 0;
     left: 0;
-    text-align: center;
-    z-index: 101;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: rgba(255, 123, 0, 0.75);
-    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px; ;
-    min-width: 160px;
-    padding: 12px 16px;
-    z-index: 2;
-    border-radius: 15px;
-    text-align: center;
-}
+    z-index: 10px;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: block;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
   
 .dropdown:hover .dropdown-content {
     display: block;
