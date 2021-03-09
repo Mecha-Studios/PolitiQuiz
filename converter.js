@@ -1,4 +1,4 @@
-var version = "2.2";
+var version = "2.2.1";
 var versiontext = document.getElementById("versionnumber");
 var pspectrumaxis = document.getElementById("politicalaxis");
 var espectrumaxis = document.getElementById("economicaxis");
