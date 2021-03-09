@@ -1,6 +1,6 @@
 body{
     /*background-color: grey;*/
-    background: linear-gradient(red,blue) no-repeat center center fixed;
+    background: rgb(63, 63, 63) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -21,7 +21,7 @@ input{
     color: white;
     border-radius: 15px;
 } input:hover{
-    box-shadow: rgba(255, 123, 0, 0.75) 5px 5px 5px 5px; 
+    box-shadow: rgba(255, 0, 0, 0.75) 5px 5px 5px 5px; 
 }
 
 textarea{
@@ -51,7 +51,7 @@ textarea{
   }
   
     button:hover {
-    background: rgba(255, 0, 0, 0.5);
+      background: linear-gradient(red,blue);
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px; 
     transform: scale(1.25);
     border-radius: 15px;
@@ -71,10 +71,10 @@ a {
   }
   
   a:hover {
-    background: linear-gradient(red,orange);
+    background: linear-gradient(red,blue);
     color: white;
     text-shadow: rgba(0, 0, 0, 1) 3px 3px;
-    box-shadow: rgba(255, 123, 0, 0.75) 5px 5px 5px 5px; 
+    box-shadow: rgba(255, 0, 0, 0.75) 5px 5px 5px 5px; 
     transform: scale(1.25);
     border-radius: 15px;
   }
@@ -90,7 +90,7 @@ a {
     top: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.75);
-    box-shadow: rgba(255, 255, 255, 0.5) 5px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
     text-align: center;
     border-radius: 15px;
     display: inline-block;
@@ -187,7 +187,7 @@ object{
 }
 
 .navbar {
-    background-color: black;
+    background-color: rgb(27, 27, 27);
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -286,13 +286,12 @@ object{
     border-radius: 15px;
 }
 .answerbutton:hover{
-    background-color: red;
+    background: linear-gradient(red,blue);
 }
 
 .bottomtext{
     background-color: none;
     color: white;
-    text-shadow: rgba(255, 0, 0, 1) 2px 2px;
 }
 .bottomtext:hover{
     background: linear-gradient(red, blue);
@@ -321,7 +320,7 @@ object{
     top: 0;
     left: 0;
     z-index: 10px;
-    background-color: black;
+    background-color: rgb(27, 27, 27);
     overflow-x: hidden;
     padding-top: 20px;
     display: block;

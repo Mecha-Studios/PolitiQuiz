@@ -1,4 +1,4 @@
-var version = "2.2.1";
+var version = "2.3";
 var versiontext = document.getElementById("versionnumber");
 var pspectrumaxis = document.getElementById("politicalaxis");
 var espectrumaxis = document.getElementById("economicaxis");
@@ -39,36 +39,36 @@ function finalResults(){
     var polScore = pointsAuth - pointsLib;
     var scoretxt1 = document.getElementById("scoretxt1");
     var scoretxt2 = document.getElementById("scoretxt2");
-    scoretxt1.innerHTML = "Polical Score : " + polScore;
-    scoretxt2.innerHTML = "Economic Score : " + ecoScore;
+    scoretxt1.innerHTML = "Government: " + polScore;
+    scoretxt2.innerHTML = "Economy: " + ecoScore;
     espectrumaxis.style.display = 'inline';
     pspectrumaxis.style.display = 'inline';
     if(pointsRight > pointsLeft){
         console.log("You are right wing!");
         console.log("Political Score = " + ecoScore);
-        espectrumside.innerHTML = "Economic: Right";
+        espectrumside.innerHTML = "Economy: Right";
     } else if(pointsLeft > pointsRight){
         console.log("You are left wing!");
         console.log("Political Score = " + ecoScore);
-        espectrumside.innerHTML = "Economic: Left";
+        espectrumside.innerHTML = "Economy: Left";
     } else if(pointsRight == pointsLeft){
         console.log("You are a centrist!");
         console.log("Political Score = " + ecoScore);
-        espectrumside.innerHTML = "Economic: Center";
+        espectrumside.innerHTML = "Economy: Center";
     }
     
     if(pointsAuth > pointsLib){
         console.log("You are authoritarian!");
         console.log("Final Score = " + polScore);
-        pspectrumside.innerHTML = "Political: Authoritarian";
+        pspectrumside.innerHTML = "Government: Authoritarian";
     } else if(pointsLib > pointsAuth){
         console.log("You are libertarian!");
         console.log("Final Score = " + polScore);
-        pspectrumside.innerHTML = "Political: Libertarian";
+        pspectrumside.innerHTML = "Government: Libertarian";
     } else if(pointsAuth == pointsLib){
         console.log("You are a centrist!");
         console.log("Final Score = " + polScore);
-        pspectrumside.innerHTML = "Political: Center";
+        pspectrumside.innerHTML = "Government: Center";
     }
     
 }

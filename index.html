@@ -9,7 +9,7 @@
     <body>
         <div class="sidenav">
             <img src="politiquiz full logo 2021.png" style="width:90%;"/>
-            <a class="menutext" onclick="location.href = 'index.html'">PolitiQuiz</a>
+            <a class="menutext" onclick="location.href = 'index.html'">Quiz</a>
             <a class="menutext" onclick="location.href = 'about.html'">About</a>
             <a class="menutext" onclick="location.href = 'support.html'">Support</a>
         </div>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#7 Do you support medicare for all?</h2>
+                    <h2>#7 Do you support social security?</h2>
                     <div class="answerchoice">
                         <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >Yes</button>
                         <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >No</button>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#9 Do you support low and/or no taxes?</h2>
+                    <h2>#9 Should the United States have low and/or no taxes?</h2>
                     <div class="answerchoice">
                         <button onclick="addPointsLib(); addPointsRight(); this.style.backgroundColor = 'red'"  >Yes</button>
                         <button onclick="addPointsAuth(); addPointsLeft(); this.style.backgroundColor = 'red'"  >No</button>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="question">
-                    <h2>#16 Should the United States implement re-education camps?</h2>
+                    <h2>#16 Should the United States create re-education camps?</h2>
                     <div class="answerchoice">
                         <button onclick="addPointsAuth(); addPointsLeft(); this.style.backgroundColor = 'red'"  >Yes</button>
                         <button onclick="addPointsLib(); addPointsRight(); this.style.backgroundColor = 'red'"  >No</button>
@@ -172,12 +172,75 @@
                 <div class="question">
                     <h2>#23 Should it be illegal to burn the American flag?</h2>
                     <div class="answerchoice">
-                        <button onclick="addPointsLeft(); addPointsLib(); this.style.backgroundColor = 'red'"  >Yes</button>
-                        <button onclick="addPointsRight(); addPointsAuth(); this.style.backgroundColor = 'red'"  >No</button>
+                        <button onclick="addPointsRight(); addPointsAuth(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); addPointsLib(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#24 Should businesses be able to operate freely without government intervention?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#25 Should the government ban any weapons from civilian use?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#26 Should the top 1% be taxed more than the other 99%?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#27 Should the government regulate housing prices?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#28 Should pornographic content between consenting adults be legal?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#29 Should the government guarantee employment?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#30 Should the government guarantee healthcare?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#31 Should parents of students be able to send their children to a school other than the one closest to them?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >No</button>
+                    </div>
+                </div>
+                <div class="question">
+                    <h2>#32 Is speech violence?</h2>
+                    <div class="answerchoice">
+                        <button onclick="addPointsLeft(); addPointsAuth(); this.style.backgroundColor = 'red'"  >Yes</button>
+                        <button onclick="addPointsRight(); addPointsLib(); this.style.backgroundColor = 'red'"  >No</button>
                     </div>
                 </div>
                 <button onclick="finalResults()" id="finishbutton">Finish Quiz</button>
-                <h1>To submit a question, go to the <h1 onclick="location.href = 'about.html'" style="color: red;">About</a> page.</h1>
+                <h1>To submit a question, go to the <h1 onclick="location.href = 'about.html'" style="color: red;">About page.</h1></h1>
         </div>
         <div class="navbar">
             <a class="bottomtext" onclick="location.href = 'LICENSE'">© Copyright TR 2021</a>
